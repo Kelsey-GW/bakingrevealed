@@ -1,0 +1,88 @@
+#main { /*Setting up the main section of the site so the text doesn't flow from one edge of the screen to the other */
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left; /*want text to start on the left since we are in the West*/
+	width: 800px; /*gives us a good indentation*/
+	
+	/*height: 1200px; An experiment with making the main section scroll up and down independently from the rest of the screen
+	overflow: auto; */
+} 
+
+body {
+background: #FEFAD3; /*our warm yellow background*/
+font-family: "Arial", sans-serif; /*Changed the default text for the site to arial*/
+}
+h2 { /*want my headings to all be upper case*/
+	text-transform: uppercase;
+}
+p { /*I want my text to be indented each paragraph.*/
+	text-indent: 30px;
+}
+
+img {
+	padding: 10px; /*general image padding to separate them from text*/
+}
+#bannerCake { /*positioning the header cupcake*/
+	float: left; /*cupcake on the left. Social media on the right*/
+	margin: 10px 10px 10px 10px; /*keeps it a nice distance away from the nav bar. No overlap*/
+}
+
+/* positioning the social icon links*/
+#socials {
+	position: absolute; /*Cupcake on the left so these need to be on the right*/
+	top: 140px; /*pushes them from the top of the header to just above the nav*/
+	right: 0;
+}
+/*creating the orange nav bar used on each page*/
+
+#fruitImages {
+	display: inline-block; /*keeps them together as a unit*/
+	margin: 10px 10px 5px 0px;
+}
+/* UNUSED!!
+	Baking Revealed Name on nav bar experiment. 
+		<div id="name">
+			<li>Baking Revealed</li>
+		</div>
+#name {
+	color: white;
+	text-align: right;
+}
+*/
+
+#nav {
+    background-color: #E08412; /*Our orange*/
+    overflow: hidden; /*Don't need the overflow to be visible*/
+    width: 100%; /*This should fit it to the screen anyway*/
+    margin: 0; /*screen to screen. No empty space */
+    padding: 0;
+	text-align: left; /*want the text on the left*/
+}
+
+#nav ul { /*formatting the general unordered elements*/
+    margin: 0px;
+    padding: 0;
+    width: 900px;
+	color: white; /*white text*/
+}
+
+#nav li {
+    background-color: #E08412; /*the elements need a background to match the nav bar*/
+    float: left; /*Want the words to be towards the left*/
+    list-style-type: none; /*We don't want any numbering or squares*/
+    margin: 7px; /*These two give the nav bar a nice thickness*/
+    padding: 7px;
+}
+
+#nav li a {
+    color: white; /*white text*/
+    text-decoration: none; /*want clean words. no hyperlink lines*/
+}
+
+#nav ul li:hover { /*We DO want a hover colour. Just for clarity so you know what you're clicking*/
+    background-color: #C27414;
+}
+
+address { /*don't want the address text to be italicised*/
+	font-style: normal;
+}
